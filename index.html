@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ciclo for</title>
+</head>
+<body>
+    <script>
+let pares = 0;
+let impares = 0;
+
+
+for (let contar1 = 1; contar1 <= 5; contar1++) {
+    for (let contar2 = 1; contar2 <= 5; contar2++) {
+        let resultado = contar1 * contar2;
+        console.log(contar1+"x"+ contar2+ "=" +resultado);
+
+        
+        if (resultado % 2 == 0) {
+            console.log("buzz");
+            pares++;
+        } else {
+            console.log("bass");
+            impares++; 
+        }
+    }
+    console.log(""); 
+}
+
+
+console.log("Cantidad de números pares: "+pares);
+console.log("Cantidad de números impares: "+impares);</script>
+</body>
+</html>
