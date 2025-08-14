@@ -1,35 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ciclo for</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabla de 1,2,3,4,5 hasta 5</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.css">
+  <script src="./bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/app.js"></script>
 </head>
 <body>
-    <script>
-let pares = 0;
-let impares = 0;
-
-
-for (let contar1 = 1; contar1 <= 5; contar1++) {
-    for (let contar2 = 1; contar2 <= 5; contar2++) {
-        let resultado = contar1 * contar2;
-        console.log(contar1+"x"+ contar2+ "=" +resultado);
-
+  <div class="container">
+    <div class="portada">
+      <div class="hoja1">
+        <div class="hoja2">
+          <div class="hoja3">
+            <div class="hoja4">
+              <div class="row col-12 libro">
+                <div class="izquierda col-6 formulario">
+                  <form class="row g-3 needs-validation" novalidate method="#" onsubmit="return ejercicio5()">
+                    <h3 style="margin-left: 65px;">Formulario</h3>
+                    <div class="col-md-8">
+                        <label for="validationServer01" class="form-label">Número para iniciar a multiplicar</label>
+                        <input type="number" min="0" step="1" class="form-control is-valid" id="texto" value="0" required>
+                        <div class="valid-feedback">
+                        </div>
+                      </div>
+                      
         
-        if (resultado % 2 == 0) {
-            console.log("buzz");
-            pares++;
-        } else {
-            console.log("bass");
-            impares++; 
-        }
-    }
-    console.log(""); 
-}
+                    <div class="col-12">
+                      <button class="btn btn-primary col-8" type="submit">Enviar</button>
+                    </div>
+                  </form>
+                </div>
 
-
-console.log("Cantidad de números pares: "+pares);
-console.log("Cantidad de números impares: "+impares);</script>
+                <div class="derecha col-5  respuesta" align="center">
+                  <div class="col-12">
+                    <h3> Respuesta </h3>         
+                 </div>
+                 <div  id="resultado">
+                 </div>
+                 <div id="cantidad">
+                </div>
+             </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

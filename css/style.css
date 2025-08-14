@@ -1,0 +1,125 @@
+*{
+    font-family:minecraftia;
+}
+body{
+    background-image: url(../img/fondo.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    background-color: transparent;
+}
+@font-face{
+    font-family:minecraftia;
+    src: url(../Fuente.ttf);
+}
+.portada{
+    width: 1100px;
+    height: 600px;
+    border: rgb(158, 37, 37) 2px solid;
+    border-radius: 0.5pc;
+    background-image: url(../img/portada.png);
+    box-shadow: 0px 0px 7px rgb(0, 0, 0);
+    margin-top: 20px;
+}
+
+.hoja1{
+    width: 1050px;
+    height: 565px;
+    margin-top: 15px;
+    margin-left: 25px;
+    position:absolute;
+    background-image: url(../img/hoja.jpg);
+    box-shadow: 0px 0px 8px black;
+}
+
+.hoja2{
+    border: 1px white;
+    width: 1040px;
+    height: 570px;
+    margin-bottom: 10px;
+    margin-left: 4.4px;
+    background-image: url(../img/hoja.jpg);
+    box-shadow: 0px 0px 7px black;
+}
+.hoja3{
+    border: 1px white;
+    width: 1030px;
+    height: 575px;
+    margin-bottom: 10px;
+    margin-left: 4.4px;
+    background-image: url(../img/hoja.jpg);
+    box-shadow: 0px 0px 7px black;    
+}
+.hoja4{
+    border: 1px white;
+    width: 1020px;
+    height: 580px;
+    margin-bottom: 10px;
+    margin-left: 4.4px;
+    background-image: url(../img/hoja.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 7px black;
+}
+
+.formulario{
+    display: flexbox;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    margin-left: 4.4px;
+    padding: 5px 15px;
+    height: 580px;
+}
+
+.forma, .respuesta{
+    margin: 10px;
+    padding: 5px 15px;
+    border-radius: 6px;
+    
+}
+.forma{
+    padding: 30px;
+}
+
+.libro{
+    padding-left:97px;
+    padding-top: 20px;
+    height: 580px;
+}
+.form-control{
+    background-color: transparent;
+}
+.isquierda{
+    padding-top: 20px;
+}
+
+#resultado{
+    width: 410px;
+    border: 1px;
+    max-height:400px ;
+    padding-top: 2px;
+    flex-wrap: wrap;
+    display: flex;
+    scrollbar-color: rgb(75, 130, 233) black;
+    scrollbar-width: thin;
+  }
+  #resultado p{
+    color:rgb(231, 229, 229);
+    margin-bottom: 0px;
+    margin-top: 13px; 
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+  .separacion{
+    background-color: rgb(207, 145, 74);
+    border:1px solid  rgb(143, 99, 50);
+    padding: 0px;
+    width: 128px;
+    margin: 2px;
+    margin-top: 0px;
+    text-align: center;
+  }
+
+
+
